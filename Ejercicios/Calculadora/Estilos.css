@@ -1,0 +1,71 @@
+input[type="button"]:hover{
+    background-color:slategray;
+}
+
+form{
+    background-color: #484848;
+    padding-left: 1%;
+    text-align: center;
+    height: 500px;
+    width: 39%;
+}
+
+input[type="text"]{
+    background-color: #cddecc;
+    border: 0px;
+    width: 90%;
+    height: 8%;
+    font-size: 20px;
+    color: white;
+    text-align: right;
+    margin-right: 3%;
+}
+
+input[name="txtcaja2"]{
+    font-family: digital;
+    margin-top: 5%;
+    font-size: 26px;
+    color:black;
+}
+
+input:focus{
+    outline: none;
+    cursor: pointer;
+}
+
+input[name="txtcaja"]{
+    font-family: digital;
+    font-size: 26px;
+    color: black;
+}
+
+input[type="button"]{
+    font-size: 18px;
+    font-family: digital;
+    width: 16%;
+    border: 0px;
+    height: 60px;
+    color: black;
+    background-color: #eeeeee;
+    margin-right: 5%;
+    margin-left: 3%;
+}
+
+input[name="CERO"]{
+    font-size: 19px;
+    font-weight: lighter;
+    float: left;
+    width: 42%;
+    margin-right: 5%;
+}
+
+body{
+    background-color:#f1f1f1;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    #calculadora{
+        width: 100%;
+    }
+}

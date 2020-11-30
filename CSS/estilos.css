@@ -1,0 +1,301 @@
+:root * {
+    font-family: -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,"Helvetica Neue", sans-serif;;
+    padding: 0;
+    margin: 0;
+    --FondoBody: white;
+    --colorLetras: black;
+    --colorBotonScroll: rgba(103, 176, 209, 0.8);
+    --colorBotonMenu: linear-gradient(90deg, #66C8F3 0%, #33B292 100%, #2B3566 100%);
+    --linearGradiente: linear-gradient(90deg, #66C8F3 0%, #33B292 100%, #2B3566 100%);
+    --colorMenu: #414141;
+    --ColorLetraMenu:white;
+    --ColorHamburgesa: black;
+    --Tipografia: 'Muli', sans-serif;
+}
+
+/*Estilos HOME.html*/
+    .divHome{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+/**/
+
+html{
+    position: relative;
+}
+
+/*Body*/
+body{
+    background-color: var(--FondoBody);
+}
+
+/*Menu principal*/
+.menu{
+    height: 75px ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 997;
+    transition: all 0.5s;
+    padding: 15px 0;
+}
+
+.LOGO{
+    height: 80px;
+    width: 80px;
+    padding: 0 80px;
+}
+
+/*Menu principal*/
+.menu_items{
+    display: flex;
+    list-style: none;
+}
+
+.menu_items li{
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.menu_items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    color: var(--colorLetras);
+}
+
+.menu_items li a:hover {
+    transform: translate(-5px, 5px);
+    background-color: var(--colorBotonMenu) ;
+}
+
+/*Propiedad que se muestra cuando le damos a la hamburgesa*/
+ul.show{
+    top:80px;
+}
+
+/*Boton para volver al principio de la pagina */
+#scrollTopBtn{
+    background-color: var(--colorBotonScroll);
+    border-radius: 50%;
+    border-style: none;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    display: none;
+    cursor: pointer;
+    bottom: 5%;
+    right: calc(10%);
+    outline: none;
+}
+
+/*El banner que va encima de los proyectos*/
+.contenido{
+    width: 100%;
+    height: 350px;
+    background: var(--linearGradiente);
+    background-size: cover;
+}
+
+.contenido h1{
+    text-align: center;
+    padding-top: 15vmin;
+}
+
+/*Contenedor nombre para ir a el cuando
+se pulsa en perfil profesional*/
+#contenedorNombre{
+    height: 250px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/*Linea horizontal*/
+.hr{
+    background: black;
+    height: 2px;
+    width: 70px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*Boton del CV*/
+#center-align{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.button {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    background-color: #66C8F3;
+}
+
+.button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Contenedor en el que explico Sobre mi*/
+.contenedorPrincipal{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedorCentro{
+    text-align: left;
+    width: 20%;
+    display: inline-block;
+    padding-bottom: 10%;
+    padding-left: 10%;
+}
+
+.DivImagenCentro{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.centro{
+    text-align: center;
+}
+
+
+p{
+    line-height: 2rem;
+}
+
+/*El contenido del footer*/
+footer{
+    width: 100%;
+    background: var(--linearGradiente);
+    background-size: cover;
+}
+
+.contenidoFooter p{
+    text-align: center;
+    line-height: 2rem;
+}
+
+/*Aqui Esta El CSS de los proyectos*/
+#proyectos{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#proyectos .carta{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#proyectos .carta:hover{
+    transform: translate(-2px, 10px);
+}
+
+#proyectos .carta img{
+    width: 330px;
+    height: 220px;
+}
+
+#proyectos .carta h4{
+    font-weight: 600;
+}
+
+#proyectos .carta p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 521px) {
+    .menu_items li a {
+        font-size: 16px;
+        font-family: var(--Tipografia);
+    }
+}
+
+@media only screen and (max-width:520px) {
+    /*Hamburgesa*/
+    .hamburgesa {
+        width: 35px;
+        height: 5px;
+        background-color: var(--ColorHamburgesa);
+        margin: 6px 0;
+    }
+
+    .btn_menu{
+        margin-right: 5vh;
+    }
+
+    /*Menu que sale cuando se le da a la hamburgesa*/
+    .menu_items {
+        position: fixed;
+        width: 100%;
+        height:calc(100%);
+        background-color: var(--colorMenu);
+        top: 100vh;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .menu_items li {
+        margin: 50px 0 0 0;
+        line-height: 30px;
+    }
+
+    .menu_items li a {
+        font-size: 20px;
+        color: var(--ColorLetraMenu);
+        font-weight: bold;
+        font-family: var(--Tipografia);
+    }
+
+    /*El logo desaparezca pero guarde su sitio*/
+    .LOGO{
+        visibility: hidden;
+        width: 1vh;
+    }
+
+    /*Sobre mi que sea responsive en movil*/    
+    .contenedorCentro{
+        margin-right: 7%;
+        padding-bottom: 25%;
+        text-align: justify;
+        width: 100%;    
+    }
+
+    /*Boton para subir al principio de la pagina */
+    #scrollTopBtn {
+        right: 40px;
+        bottom: 60px;
+        border-radius: 50%;
+    }
+
+    /*Reducir tamaño del footer*/
+    footer{
+        font-size: small;
+    }
+}

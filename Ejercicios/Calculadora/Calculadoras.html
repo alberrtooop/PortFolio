@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Calculadora</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <script src="calculadora.js"></script>
+        <link href="Estilos.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+    <body>
+        <div class="calculadora">
+            <form name="calculadora" id="calculadora">
+                <input type="text" name="txtcaja2" id="txtcaja2" readonly/>
+                <input type="text" name="txtcaja" id="txtcaja" readonly/>
+                <p>
+                    <input type="button" value="CE" onclick="Limpiar()" />
+                    <input type="button" value='←'  onclick="retroceder()">
+                    <input type="button" value="+/-" onclick="MasMenos()" />
+                    <input type="button" value="&#247;" onclick="SacarNumero('/')" />
+
+                </p>
+                <p>
+                    <input type="button" value="7" onclick="SacarNumero('7')" />
+                    <input type="button" value="8" onclick="SacarNumero('8')" />
+                    <input type="button" value="9" onclick="SacarNumero('9')" />
+                    <input type="button" value="&#215;" onclick="SacarNumero('*')" />
+                </p>
+
+                <p>
+                    <input type="button" value="4" onclick="SacarNumero('4')" />
+                    <input type="button" value="5" onclick="SacarNumero('5')" />
+                    <input type="button" value="6" onclick="SacarNumero('6')" />
+                    <input type="button" value="-" onclick="SacarNumero('-')" />
+
+                </p>
+                <p>
+                    <input type="button" value="1" onclick="SacarNumero('1')" />
+                    <input type="button" value="2" onclick="SacarNumero('2')" />
+                    <input type="button" value="3" onclick="SacarNumero('3')" />
+                    <input type="button" value="+" onclick="SacarNumero('+')" />
+                </p>
+                <p>
+                    <input type="button"  value="0"  name="CERO" onclick="SacarNumero('0')" />
+                    <input type="button" value="." onclick="Coma()" />    
+                    <input type="button" name="IGUAL" value="=" onclick="Igual()" />
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+:root * {
+    font-family: -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,"Helvetica Neue", sans-serif;
+    --FondoBody: rgba(103, 176, 209, 0.8);
+}
+
+body{
+    background-color: var(--FondoBody);
+}
+
+div{
+    padding-bottom: 1%;
+}
+
+button {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    background-color: #111618;
+    color: white;
+}

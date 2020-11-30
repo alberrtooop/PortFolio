@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Final</title>
+    <!--Meta para que se pueda ver en movil y sea escalable-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--Estilos propios y de formulario-->
+    <link href="CSS/estilos.css" rel="stylesheet" type="text/css"/>
+    <link href="CSS/Formulario.css" rel="stylesheet" type="text/css"/>
+    <!--Funcion del JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+<body>
+    <nav class="menu">
+        <div><img class="LOGO" src="img/Logo.png" alt="LOGO"></div>
+        <div class="btn_menu">
+            <div class="hamburgesa"></div>
+            <div class="hamburgesa"></div>
+            <div class="hamburgesa"></div>
+        </div>
+        <ul class="menu_items">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="index.html#contenedorNombre">PERFIL PROFESIONAL</a></li>
+            <li><a href="index.html#proyectos">PORTFOLIO</a></li>
+            <li><a href="mmedia/PDF/GuiaDeEstilos_AlbertoMoyano.pdf">GUÍA ESTILOS</a></li>
+            <li><a href="contactos.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <div class="contenido"></div>
+    <div class="Formulario">
+        <div class="titulo">
+            <h1>Formulario de contacto</h1>
+        </div>
+        <div class="contacto">
+            <div class="filasImput">
+                <input type="text" class="input" placeholder="Nombre">
+                <input type="text" class="input" placeholder="Email">
+                <input type="text" class="input" placeholder="Teléfono">
+            </div>
+            <div class="msg">
+                <textarea placeholder="Mensaje"></textarea>
+                <div class="btn">Enviar</div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="contenidoFooter">
+            <p>
+                Email de contacto <a href="mailto:alberrto.alg@gmail.com">Pulse aqui</a>
+            <p>
+                Nombre Alumno: Luis Alberto Moyano Sánchez
+            </p>
+            </p>
+            <br />
+            <p>
+                El uso de este sitio está sujeto a las condiciones de uso expresas. Al utilizar este sitio, tú indicas
+                que aceptas cumplir con estos <a href="">Términos de servicio universales</a>.
+            </p>
+
+            <p>Copyright © 1997 – 2020 Alberto MoyanoCompany, LLC. Todos los derechos reservados. </p>
+        </div>
+    </footer>
+
+    <!--Boton para subir al inicio-->
+    <button id="scrollTopBtn" title="Scroll to Top" type="button">▲</button>
+    <!--Funciones propias-->
+    <script src="./includes/funciones.js" type="text/javascript"></script>
+</body>
+
+</html>
